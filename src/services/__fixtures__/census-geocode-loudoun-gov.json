@@ -1,0 +1,37 @@
+{
+  "result": {
+    "addressMatches": [
+      {
+        "matchedAddress": "1 HARRISON ST SE, LEESBURG, VA, 20175",
+        "coordinates": {
+          "x": -77.561559980346,
+          "y": 39.113939436497
+        },
+        "addressComponents": {
+          "zip": "20175",
+          "streetName": "HARRISON",
+          "preType": "",
+          "city": "LEESBURG",
+          "preDirection": "",
+          "suffixDirection": "SE",
+          "fromAddress": "99",
+          "state": "VA",
+          "suffixType": "ST",
+          "toAddress": "1",
+          "suffixQualifier": "",
+          "preQualifier": ""
+        },
+        "geographies": {
+          "Counties": [
+            {
+              "NAME": "Loudoun County",
+              "STATE": "51",
+              "COUNTY": "107",
+              "GEOID": "51107"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

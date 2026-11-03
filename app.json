@@ -1,0 +1,90 @@
+{
+  "expo": {
+    "name": "Emercity",
+    "slug": "emercity",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "emercity",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "bundleIdentifier": "org.emercity.app",
+      "supportsTablet": true,
+      "icon": "./assets/expo.icon",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "package": "org.emercity.app",
+      "adaptiveIcon": {
+        "backgroundColor": "#1B3A5C",
+        "foregroundImage": "./assets/images/android-icon-foreground.png",
+        "backgroundImage": "./assets/images/android-icon-background.png",
+        "monochromeImage": "./assets/images/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#1B3A5C",
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 76
+        }
+      ],
+      [
+        "expo-sqlite",
+        {
+          "useSQLCipher": true
+        }
+      ],
+      "expo-secure-store",
+      "@react-native-community/datetimepicker",
+      "expo-sharing",
+      "expo-localization",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Emercity uses the camera to scan medication barcodes.",
+          "microphonePermission": false,
+          "recordAudioAndroid": false,
+          "barcodeScannerEnabled": true
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Emercity uses your location to find your home address, the nearest open shelter, and alerts where you are."
+        }
+      ],
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Emercity saves your lock-screen emergency card to Photos.",
+          "savePhotosPermission": "Emercity saves your lock-screen emergency card to Photos.",
+          "isAccessMediaLocationEnabled": false
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "color": "#1B3A5C"
+        }
+      ],
+      [
+        "expo-local-authentication",
+        {
+          "faceIDPermission": "Emercity can use Face ID to lock the app. Emergency Mode always stays available."
+        }
+      ],
+      "@maplibre/maplibre-react-native"
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    }
+  }
+}
